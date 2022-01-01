@@ -7,8 +7,8 @@
     <ProjectGuid>{7BCB2908-B003-45D9-BE68-50CBA5217603}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mod.Template</RootNamespace>
-    <AssemblyName>Mod.Template</AssemblyName>
+    <RootNamespace>Distance.MeshExporter</RootNamespace>
+    <AssemblyName>Distance.MeshExporter</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -86,11 +86,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mod.cs" />
+    <Compile Include="ConfigurationLogic.cs" />
+    <Compile Include="Entry.cs" />
+    <Compile Include="Harmony\Assembly-CSharp\MeshExport\ExportObj.cs" />
+    <Compile Include="Harmony\Assembly-CSharp\MeshExport\MeshExporter.cs" />
+    <Compile Include="Harmony\UnityFBXExporter\Editor\ExporterMenu.cs" />
+    <Compile Include="Harmony\UnityFBXExporter\FBXExporter.cs" />
+    <Compile Include="Harmony\UnityFBXExporter\FBXUnityMaterialGetter.cs" />
+    <Compile Include="Harmony\UnityFBXExporter\FBXUnityMeshGetter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Mod.Template.targets" />
+    <None Include="Distance.MeshExporter.targets" />
+    <None Include="Harmony\UnityFBXExporter\Editor.meta" />
+    <None Include="Harmony\UnityFBXExporter\Editor\ExporterMenu.cs.meta" />
+    <None Include="Harmony\UnityFBXExporter\FBXExporter.cs.meta" />
+    <None Include="Harmony\UnityFBXExporter\FBXUnityMaterialGetter.cs.meta" />
+    <None Include="Harmony\UnityFBXExporter\FBXUnityMeshGetter.cs.meta" />
+    <None Include="Harmony\UnityFBXExporter\LICENSE" />
+    <None Include="Harmony\UnityFBXExporter\LICENSE.meta" />
+    <None Include="Harmony\UnityFBXExporter\readme.md" />
+    <None Include="Harmony\UnityFBXExporter\readme.md.meta" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
